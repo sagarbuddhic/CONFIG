@@ -1,0 +1,80 @@
+{
+  "window.zoomLevel": 1,
+  "files.autoSave": "off",
+  "extensions.ignoreRecommendations": true,
+  "workbench.sideBar.location": "left",
+  "workbench.activityBar.visible": true,
+  "editor.minimap.enabled": false,
+  "gitlens.advanced.messages": {
+    "suppressCommitHasNoPreviousCommitWarning": false,
+    "suppressCommitNotFoundWarning": false,
+    "suppressFileNotUnderSourceControlWarning": false,
+    "suppressGitVersionWarning": false,
+    "suppressLineUncommittedWarning": true,
+    "suppressNoRepositoryWarning": false,
+    "suppressResultsExplorerNotice": false,
+    "suppressUpdateNotice": false,
+    "suppressWelcomeNotice": true
+  },
+  "import/no-unresolved": "off",
+  "javascript.validate.enable": false,
+  "prettier.singleQuote": true,
+  // disabling prettier with eslint
+  // "prettier.eslintIntegration": true,
+  "prettier.trailingComma": "all",
+  "prettier.arrowParens": "always",
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "terminal.integrated.rendererType": "dom",
+  "editor.multiCursorModifier": "alt",
+  "python.formatting.provider": "autopep8",
+  "editor.formatOnSave": false,
+  "[javascript]": {
+    "editor.formatOnSave": true
+  },
+  "[python]": {
+    "editor.formatOnSave": true
+  },
+  "[json]": {
+    "editor.formatOnSave": true
+  },
+  "breadcrumbs.enabled": true,
+  // "[json]": {
+  //   "editor.defaultFormatter": "vscode.json-language-features"
+  // },
+  "eslint.autoFixOnSave": true,
+  "window.menuBarVisibility": "default",
+  // "eslint.options": {
+  //   "rules": {
+  //     "no-debugger": "off"
+  //   }
+  // }
+  "javascript.format.enable": false,
+  "eslint.alwaysShowStatus": true,
+  "eslint.options": {
+    "extensions": [".html", ".js", ".vue", ".jsx"]
+  },
+  "eslint.validate": [
+    {
+      "language": "html",
+      "autoFix": true
+    },
+    {
+      "language": "vue",
+      "autoFix": true
+    },
+    {
+      "language": "javascript",
+      "autoFix": true
+    },
+    {
+      "language": "javascriptreact",
+      "autoFix": true
+    }
+  ],
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact"
+  },
+  "editor.fontSize": 16,
+  "terminal.integrated.shell.linux": "/bin/bash",
+  "editor.largeFileOptimizations": false
+}
