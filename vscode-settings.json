@@ -1,80 +1,161 @@
 {
-  "window.zoomLevel": 1,
-  "files.autoSave": "off",
-  "extensions.ignoreRecommendations": true,
-  "workbench.sideBar.location": "left",
-  "workbench.activityBar.visible": true,
-  "editor.minimap.enabled": false,
-  "gitlens.advanced.messages": {
-    "suppressCommitHasNoPreviousCommitWarning": false,
-    "suppressCommitNotFoundWarning": false,
-    "suppressFileNotUnderSourceControlWarning": false,
-    "suppressGitVersionWarning": false,
-    "suppressLineUncommittedWarning": true,
-    "suppressNoRepositoryWarning": false,
-    "suppressResultsExplorerNotice": false,
-    "suppressUpdateNotice": false,
-    "suppressWelcomeNotice": true
-  },
-  "import/no-unresolved": "off",
-  "javascript.validate.enable": false,
-  "prettier.singleQuote": true,
-  // disabling prettier with eslint
-  // "prettier.eslintIntegration": true,
-  "prettier.trailingComma": "all",
-  "prettier.arrowParens": "always",
-  "javascript.updateImportsOnFileMove.enabled": "always",
-  "terminal.integrated.rendererType": "dom",
-  "editor.multiCursorModifier": "alt",
-  "python.formatting.provider": "autopep8",
-  "editor.formatOnSave": false,
-  "[javascript]": {
-    "editor.formatOnSave": true
-  },
-  "[python]": {
-    "editor.formatOnSave": true
-  },
-  "[json]": {
-    "editor.formatOnSave": true
-  },
-  "breadcrumbs.enabled": true,
-  // "[json]": {
-  //   "editor.defaultFormatter": "vscode.json-language-features"
-  // },
-  "eslint.autoFixOnSave": true,
-  "window.menuBarVisibility": "default",
-  // "eslint.options": {
-  //   "rules": {
-  //     "no-debugger": "off"
-  //   }
-  // }
-  "javascript.format.enable": false,
-  "eslint.alwaysShowStatus": true,
-  "eslint.options": {
-    "extensions": [".html", ".js", ".vue", ".jsx"]
-  },
-  "eslint.validate": [
-    {
-      "language": "html",
-      "autoFix": true
-    },
-    {
-      "language": "vue",
-      "autoFix": true
-    },
-    {
-      "language": "javascript",
-      "autoFix": true
-    },
-    {
-      "language": "javascriptreact",
-      "autoFix": true
-    }
-  ],
-  "emmet.includeLanguages": {
-    "javascript": "javascriptreact"
-  },
-  "editor.fontSize": 16,
-  "terminal.integrated.shell.linux": "/bin/bash",
-  "editor.largeFileOptimizations": false
+        "window.zoomLevel": 1,
+        "files.autoSave": "off",
+        // "extensions.ignoreRecommendations": true,
+        "workbench.sideBar.location": "right",
+        "workbench.activityBar.visible": true,
+        "editor.minimap.enabled": false,
+        "editor.fontFamily": "Fira Code",
+        "editor.fontLigatures": true,
+        // // "workbench.editor.showTabs": false,
+        "editor.cursorStyle": "block" ,
+        "editor.cursorBlinking": "smooth" ,
+        "workbench.editor.highlightModifiedTabs": true, 
+        "gitlens.advanced.messages": {
+          "suppressCommitHasNoPreviousCommitWarning": false,
+          "suppressCommitNotFoundWarning": false,
+          "suppressFileNotUnderSourceControlWarning": false,
+          "suppressGitVersionWarning": false,
+          "suppressLineUncommittedWarning": true,
+          "suppressNoRepositoryWarning": false,
+          "suppressResultsExplorerNotice": false,
+          "suppressUpdateNotice": false,
+          "suppressWelcomeNotice": true
+        },
+        "javascript.updateImportsOnFileMove.enabled": "always",
+        "terminal.integrated.rendererType": "dom",
+        "terminal.external.osxExec": "iTerm.app",
+        "terminal.integrated.shell.osx": "/bin/bash",
+        // "terminal.explorerKind": "external",
+        "terminal.integrated.fontFamily": "menlo",
+        "terminal.integrated.fontSize": 13,
+        "terminal.integrated.cursorBlinking": true,
+        "workbench.colorCustomizations": {
+          "terminal.background":"#020202",
+          "terminal.foreground":"#32CD32",
+          "editor.background": "#131212",
+          "sideBar.background": "#131313",
+          // "editorWhitespace.foreground": "#93A1A130",
+        },
+        "editor.tokenColorCustomizations": {
+          "numbers": "#f1d4d4",
+          "comments": "#6B8E23",
+          "functions": "#6decb9",
+          "strings": "#ea5e5e",
+          "variables": "#3fc5f0",
+          "keywords": "#bc5090",
+          "types":  "#f1d6ab",
+          "textMateRules": [
+            {
+              "scope": [
+                // all comment types
+                "comment",
+                // true, false, null
+                "constant.language",
+                // import, from, export, default, return, if, for, break, continue, try, catch, finally,
+                // throw, default, yield, await
+                "keyword.control",
+                // in, void, delete, instanceof
+                "keyword.operator.expression",
+                // debugger
+                "keyword.other",
+                // new
+                "keyword.operator.new",
+                // super, this, arguments
+                "variable.language",
+                // attributes in html, jsx, etc.
+                "entity.other.attribute-name",
+                // static, extends, async, private, public, implements
+                // constructor, const, let, var, enum, class, function, interface
+                // no explicit scopes for constructor, const, let, var
+                // also no explicit scope for function without the arrow
+                // therefore we enable all storage and explictly exclude the arrow in another scope
+                "storage",
+              ],
+              "settings": {
+                "fontStyle": "italic"
+              }
+            },
+            {
+              "scope": [
+                "entity",
+                "entity.name",
+                "entity.name.class",
+                "entity.name.function",
+                "entity.name.method",
+                "entity.name.section",
+                "entity.name.selector",
+                "entity.name.tag",
+                "entity.name.type",
+                "entity.other",
+                "entity.other.attribute-name",
+                "entity.other.inherited-class",
+              ],
+              "settings": {
+                "fontStyle": ""
+              }
+            }
+          ]
+      },
+        "editor.multiCursorModifier": "alt",
+        "python.formatting.provider": "autopep8",
+        "editor.formatOnSave": false,
+        "[javascript]": {
+          "editor.formatOnSave": true,
+          "editor.fontLigatures": "'ss02', 'ss19'",
+        },
+        "[python]": {
+          "editor.formatOnSave": true,
+        },
+        "[json]": {
+          "editor.formatOnSave": true,
+        },
+        "breadcrumbs.enabled": false,
+        // "[json]": {
+        //   "editor.defaultFormatter": "vscode.json-language-features"
+        // },
+        "eslint.autoFixOnSave": true,
+        "window.menuBarVisibility": "default",
+        // "eslint.options": {
+        //   "rules": {
+        //     "no-debugger": "off"
+        //   }
+        // }
+        "javascript.format.enable": false,
+        "javascript.validate.enable": false,
+        "eslint.alwaysShowStatus": true,
+        "eslint.options": {
+          "extensions": [
+            ".html",
+            ".js",
+            ".vue",
+            ".jsx"
+          ],
+         "quotes": ["single"]
+
+        },
+        "eslint.validate": [
+          {
+            "language": "html",
+            "autoFix": true
+          },
+          {
+            "language": "vue",
+            "autoFix": true
+          },
+          {
+            "language": "javascript",
+            "autoFix": true
+          },
+          {
+            "language": "javascriptreact",
+            "autoFix": true
+          }
+        ],
+        "emmet.includeLanguages": {
+          "javascript": "javascriptreact"
+        },
+        "editor.fontSize": 14,
+        "terminal.integrated.shell.linux": "/bin/bash",
+        "editor.largeFileOptimizations": false,
 }
