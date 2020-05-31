@@ -1,0 +1,67 @@
+
+		#	BASH ALIASES
+
+# Aliases
+
+# ----------------------
+# Git Aliases
+# ----------------------
+alias ga='git add'
+alias gaa='git add .'
+alias gaaa='git add --all'
+alias gau='git add --update'
+alias gb='git branch'
+alias gbd='git branch --delete '
+alias gc='git commit'
+alias gacm='git add . && git commit --message'
+alias gcm='git commit --message'
+alias gcma='git commit --amend -m'
+alias gcf='git commit --fixup'
+alias gco='git checkout'
+alias gcp='git checkout -'
+alias gcob='git checkout -b'
+alias gcom='git checkout master'
+alias gcod='git checkout develop'
+alias gcor='git checkout release'
+alias gd='git diff'
+alias gda='git diff HEAD'
+alias gi='git init'
+alias glg='git log --graph --oneline --decorate --all'
+alias gld='git log --pretty=format:"%h %ad %s" --date=short --all'
+alias gm='git merge --no-ff'
+alias gma='git merge --abort'
+alias gmc='git merge --continue'
+alias gmom='git merge origin master'
+alias gmod='git merge origin develop'
+alias gp='git pull'
+alias gph='git push'
+alias gpho='git push --set-upstream origin'
+alias gpr='git pull --rebase'
+alias gr='git rebase'
+alias grom='git rebase origin master'
+alias gs='git status'
+alias gst='git stash'
+alias gsta='git stash apply'
+alias gstd='git stash drop'
+alias gstl='git stash list'
+alias gstp='git stash pop'
+alias gsts='git stash save --include-untracked'
+alias grh='git reset --hard && git clean -f -d'
+alias grs='git reset --soft'
+alias gf='git fetch'
+alias gcod='git checkout develop'
+alias gsh='git show'
+
+
+# ----------------------
+# Yarn Aliases
+# ----------------------
+
+alias yn='yarn'
+alias yns='yarn start'
+alias cr='clear'
+alias ynt='yarn test'
+alias yntdd='yarn tdd'
+alias ynl='yarn run lint'
+
+alias path='echo -e "${PATH//:/\n}"'
