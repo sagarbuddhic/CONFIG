@@ -6,9 +6,8 @@
         "editor.minimap.enabled": false,
         "editor.fontFamily": "Fira Code",
         "editor.fontLigatures": true,
-        // // "workbench.editor.showTabs": false,
         "editor.cursorStyle": "block" ,
-        "editor.cursorBlinking": "smooth" ,
+        "editor.cursorBlinking": "expand",
         "workbench.editor.highlightModifiedTabs": true, 
         "gitlens.advanced.messages": {
           "suppressCommitHasNoPreviousCommitWarning": false,
@@ -22,10 +21,7 @@
           "suppressWelcomeNotice": true
         },
         "javascript.updateImportsOnFileMove.enabled": "always",
-        "terminal.integrated.rendererType": "dom",
-        "terminal.external.osxExec": "iTerm.app",
-        "terminal.integrated.shell.osx": "/bin/bash",
-        // "terminal.explorerKind": "external",
+        "terminal.integrated.rendererType": "auto",
         "terminal.integrated.fontFamily": "menlo",
         "terminal.integrated.fontSize": 13,
         "terminal.integrated.cursorBlinking": true,
@@ -34,7 +30,6 @@
           "terminal.foreground":"#32CD32",
           "editor.background": "#131212",
           "sideBar.background": "#131313",
-          // "editorWhitespace.foreground": "#93A1A130",
         },
         "editor.tokenColorCustomizations": {
           "numbers": "#f1d4d4",
@@ -110,16 +105,6 @@
           "editor.formatOnSave": true,
         },
         "breadcrumbs.enabled": false,
-        // "[json]": {
-        //   "editor.defaultFormatter": "vscode.json-language-features"
-        // },
-        "eslint.autoFixOnSave": true,
-        "window.menuBarVisibility": "default",
-        // "eslint.options": {
-        //   "rules": {
-        //     "no-debugger": "off"
-        //   }
-        // }
         "javascript.format.enable": false,
         "javascript.validate.enable": false,
         "eslint.alwaysShowStatus": true,
@@ -157,4 +142,11 @@
         "editor.fontSize": 14,
         "terminal.integrated.shell.linux": "/bin/bash",
         "editor.largeFileOptimizations": false,
+        "diffEditor.ignoreTrimWhitespace": false,
+        "editor.codeActionsOnSave": {
+           "source.fixAll.eslint": true
+        },
+        "workbench.statusBar.visible": true,
+        "workbench.colorTheme": "Visual Studio Dark",
+        "editor.accessibilitySupport": "on",
 }
