@@ -1,7 +1,6 @@
 {
         "window.zoomLevel": 1,
         "files.autoSave": "off",
-        // "extensions.ignoreRecommendations": true,
         "workbench.sideBar.location": "right",
         "workbench.activityBar.visible": true,
         "editor.minimap.enabled": false,
