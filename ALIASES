@@ -1,5 +1,16 @@
 
 		#	BASH ALIASES
+		
+NONE='\033[00m'
+YELLOW='\033[01;33m'
+BOLD='\033[1m'
+UNDERLINE='\033[4m'
+CYAN='\033[01;36m'
+
+# display current directory on terminal 
+if [ "iTerm.app" = "$TERM_PROGRAM" ]; then
+  export PROMPT_COMMAND='echo -ne "\033];${PWD##*/}\007"; ':"$PROMPT_COMMAND";
+fi
 
 # Aliases
 
@@ -12,10 +23,11 @@ alias gaaa='git add --all'
 alias gau='git add --update'
 alias gb='git branch'
 alias gbd='git branch --delete '
+alias gbc='git branch | grep "^\*" | cut -d" " -f2 | tr -d "\n" | pbcopy'
 alias gc='git commit'
 alias gacm='git add . && git commit --message'
 alias gcm='git commit --message'
-alias gcma='git commit --amend -m'
+alias gcam='git commit --amend -m'
 alias gcf='git commit --fixup'
 alias gco='git checkout'
 alias gcp='git checkout -'
@@ -65,3 +77,8 @@ alias yntdd='yarn tdd'
 alias ynl='yarn run lint'
 
 alias path='echo -e "${PATH//:/\n}"'
+
+alias ext-link='ssh -R 80:localhost:3000 ssh.localhost.run'
+alias rm-ext-link='ssh-keygen -R ssh.localhost.run'
+
+export PS1="* \[${CYAN}\]\w\[${NONE}\] ✍️  🐸 👉 $ "
