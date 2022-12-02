@@ -1,0 +1,13 @@
+mongo - run mongo service.
+npm install -P mongodb
+ps -ef | grep mongo
+sudo service mongod start
+sudo apt install mongodb-org
+sudo apt remove mango*
+sudo apt-get update && sudo apt-get dist-upgrade
+df -h
+stat -Lc '%a %A' bin
+ls -ltr python*
+add-apt-repository
+pkexec
+sudo ln -s /usr/local/bin/python3.10 /usr/bin/python3.10
