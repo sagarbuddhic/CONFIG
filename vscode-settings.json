@@ -8,6 +8,7 @@
     "editor.fontLigatures": true,
     "editor.cursorStyle": "block",
     "editor.cursorBlinking": "phase",
+    "editor.linkedEditing": true,
     "workbench.editor.highlightModifiedTabs": true,
     "gitlens.advanced.messages": {
         "suppressCommitHasNoPreviousCommitWarning": false,
@@ -101,41 +102,21 @@
     "[javascript]": {
         "editor.formatOnSave": true,
         "editor.fontLigatures": "'ss02', 'ss19'",
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
     },
     "[typescript]": {
         "editor.formatOnSave": true,
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
     },
     "[python]": {
         "editor.formatOnSave": true,
+        "editor.defaultFormatter": "dbaeumer.vscode-eslint",
     },
     "[json]": {
         "editor.formatOnSave": true,
-        "editor.defaultFormatter": "vscode.json-language-features",
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
     },
     "breadcrumbs.enabled": false,
-    "javascript.format.enable": false,
-    "javascript.validate.enable": false,
-    "eslint.enable": true,
-    "eslint.alwaysShowStatus": true,
-    "eslint.options": {
-        "extensions": [
-            ".html",
-            ".js",
-            ".vue",
-            ".jsx",
-            ".ts",
-        ],
-        // "quotes": [
-        //     "single"
-        // ]
-        },
-    "eslint.validate": [
-        "html",
-        "vue",
-        "javascript",
-        "javascriptreact",
-        "typescript",
-    ],
     "emmet.includeLanguages": {
         "javascript": "javascriptreact"
     },
@@ -143,8 +124,5 @@
     "editor.snippetSuggestions": "top",
     "editor.fontSize": 15,
     "editor.largeFileOptimizations": false,
-    "editor.codeActionsOnSave": {
-        "source.fixAll.eslint": true,
-    },
-    "diffEditor.ignoreTrimWhitespace": true,
+    "diffEditor.ignoreTrimWhitespace": false,
 }
