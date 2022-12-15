@@ -1,0 +1,27 @@
+Install Ubuntu:
+ISO File
+Mount it and boot from it.
+
+Mouse position change & scroll.
+Install Gdebi to install software.
+
+Install gnome-tweaks
+
+Alt mapped to ctrl, ctrl mapped to win
+
+Change switch windows and switch applications keys to alt+tab.
+
+Vscode install - change keys in vscode
+
+Update Terminal Settings
+
+Over amplification volume
+
+Activate Sharing in Settings for screen sharing
+Update /etc/gdm3/custom.conf - uncomment wayland=flase
+echo $XDG_SESSION_TYPE
+
+Sudo apt install git
+Sudo apt install npm
+Sudo apt install xclip
+Sudo snap install postman
