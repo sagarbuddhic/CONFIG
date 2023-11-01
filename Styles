@@ -2,3 +2,42 @@
 <link href='https://fonts.googleapis.com/css?family=EB+Garamond|Roboto' rel='stylesheet'>
 // Roboto - Numbers
 // EB+Garamond - Stylish Text
+
+bar color:
+"#1f9da6"
+"#52c2e2"
+"#6897B1"
+
+bright options:
+
+"#55C8A9"
+"#007da3"
+"#7abaff",
+  "#FFA502",
+  "#2B568C",
+  "#C96424",
+  "#d9a7a7",
+  "#d4c44e",
+  "#adadad",
+
+
+"#02b5e2",
+  "#33d42a",
+  "#7b29ff",
+  "#fc6f6f",
+  "#aae03d",
+  "#C96424",
+  "#A36969",
+  "#82BAFF",
+  "#BBA135",
+  "#2B568C",
+
+light options:
+
+"#6F927C"
+"#A36969"
+"#BBA135",
+"#2B568C", 
+"#C96424",
+"#00878F",
+"#9F6434"
