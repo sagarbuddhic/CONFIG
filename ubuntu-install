@@ -11,10 +11,14 @@ Mouse position change & scroll.
 Install Gdebi to install software.
 
 Install gnome-tweaks
-
+Go to Keyboard -> Additional Layout Options
 Alt mapped to ctrl, ctrl mapped to win
 
-Change switch windows and switch applications keys to alt+tab.
+settings -> Keyboard -> View and Customize Shortcuts -> Navigation -> 
+switch windows - alt+` 
+switch applications keys to alt+tab.
+launch terminal - alt + t
+search - alt + space
 
 Vscode install - change keys in vscode
 
