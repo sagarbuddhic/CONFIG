@@ -13,3 +13,14 @@ pkexec
 sudo ln -s /usr/local/bin/python3.10 /usr/bin/python3.10
 echo 5000 | sudo tee /sys/class/backlight/intel_backlight/brightness
 lsblk -f
+
+# Fix 1 Ubuntu
+
+Select Recovery Mode from Grub loader
+Select root - to work with command line
+use command below to list and clean up kernels
+dpkg --list | grep linux-image 
+sudo apt purge linux-image
+sudo apt-get autoremove
+sudo apt-get clean
+sudo dpkg --configure -a
