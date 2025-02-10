@@ -12,7 +12,8 @@ Install Gdebi to install software.
 
 Install gnome-tweaks
 Go to Keyboard -> Additional Layout Options
-Alt mapped to ctrl, ctrl mapped to win
+// Alt mapped to ctrl, ctrl mapped to win
+Left Alt as Ctrl, Left Ctrl As Win, Left Win as Left Alt
 
 settings -> Keyboard -> View and Customize Shortcuts -> Navigation -> 
 switch windows - alt+` 
