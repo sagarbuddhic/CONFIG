@@ -25,6 +25,9 @@ Vscode install - change keys in vscode
 
 Update Terminal Settings
 
+dconf dump /org/gnome/terminal/ > gnome_terminal_settings.txt
+dconf load /org/gnome/terminal/ < gnome_terminal_settings.txt
+
 Over amplification volume
 
 Activate Sharing in Settings for screen sharing
