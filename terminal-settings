@@ -1,1 +1,25 @@
+[legacy]
+theme-variant='dark'
 
+[legacy/profiles:]
+default='c67d9bb0-3862-4576-8e28-a51447416220'
+list=['b1dcc9dd-5262-4d8d-a863-c897e6d979b9', 'c67d9bb0-3862-4576-8e28-a51447416220', '49486ddf-5387-4e8e-a1f7-752040804b57']
+
+[legacy/profiles:/:49486ddf-5387-4e8e-a1f7-752040804b57]
+default-size-columns=90
+visible-name='test'
+
+[legacy/profiles:/:c67d9bb0-3862-4576-8e28-a51447416220]
+background-color='rgb(46,52,54)'
+background-transparency-percent=7
+bold-is-bright=true
+cell-height-scale=1.2000000000000002
+default-size-columns=120
+default-size-rows=26
+foreground-color='rgb(211,215,207)'
+highlight-colors-set=false
+use-system-font=false
+use-theme-colors=false
+use-theme-transparency=false
+use-transparent-background=true
+visible-name='sagar'
