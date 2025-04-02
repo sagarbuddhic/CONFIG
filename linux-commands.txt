@@ -24,3 +24,4 @@ sudo apt purge linux-image
 sudo apt-get autoremove
 sudo apt-get clean
 sudo dpkg --configure -a
+sudo apt-get install ubuntu-desktop
